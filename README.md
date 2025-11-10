@@ -167,6 +167,18 @@ Whenever you change English source text or add new keys, run:
 npm run sync
 ```
 
+See the output
+
+You’ll now see lines like:
+
+```bash
+🔁 [fr] welcome_message (updated) → Bonjour, je suis Nisha !
+🔁 [de] welcome_message (updated) → Willkommen, ich bin Nisha!
+🔁 [es] welcome_message (updated) → ¡Bienvenido, soy Nisha!
+🔁 [it] welcome_message (updated) → Benvenuto, sono Nisha!
+✅ Translations synced successfully.
+```
+
 ## Sync Pipeline:
 
 Reads locales/en.json (frontend) + messages/en.ts (backend)

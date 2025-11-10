@@ -1,5 +1,4 @@
 {
-  "button_ok": "\"OK\"",
   "button_cancel": "\"Annulla\"",
   "account_created": "Il tuo account è stato creato con successo",
   "password_invalid": "La password deve contenere almeno 8 caratteri",
@@ -9,6 +8,7 @@
   "welcome_message": "Benvenuto, sono Nisha e vengo dall'India e vivo a Stoccolma!",
   "subtitle": "Questa è un'app demo per aggiungere le lingue dinamicamente con traduzioni json generate e popolate automaticamente",
   "invalid_input": "L'input fornito non è valido",
-  "email_subject_welcome": "Benvenuto sulla nostra piattaforma",
+  "email_subject_welcome": "Benvenuto sulla nostra piattaforma! Ti diamo il benvenuto",
+  "button_ok": "Va bene, vai pure",
   "email_body_welcome": "Grazie per esserti unito a noi. Siamo felici di averti a bordo!"
 }

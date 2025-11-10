@@ -10,7 +10,5 @@
   "account_created": "¡Tu cuenta ha sido creada con éxito!",
   "invalid_input": "La entrada proporcionada no es válida.",
   "email_subject_welcome": "¡Bienvenido a nuestra plataforma!",
-  "email_body_welcome": "Gracias por unirte a nosotros. ¡Estamos felices de tenerte a bordo!",
-  "test_sentence1": "Prueba uno para ver si se actualiza",
-  "test_sentence2": "Prueba uno para ver si se actualiza"
+  "email_body_welcome": "Gracias por unirte a nosotros. ¡Estamos felices de tenerte a bordo!"
 }

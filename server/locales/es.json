@@ -9,6 +9,6 @@
   "account_created": "¡Tu cuenta ha sido creada con éxito!",
   "invalid_input": "La entrada proporcionada no es válida.",
   "email_subject_welcome": "¡Bienvenido a nuestra plataforma! Te damos la bienvenida",
-  "button_ok": "Está bien, adelante",
-  "email_body_welcome": "Gracias por unirte a nosotros. ¡Estamos felices de tenerte a bordo!"
+  "email_body_welcome": "Gracias por unirte a nosotros. ¡Estamos felices de tenerte a bordo!",
+  "button_ok": "Está bien, adelante"
 }

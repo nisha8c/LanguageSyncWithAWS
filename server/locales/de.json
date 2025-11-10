@@ -9,6 +9,6 @@
   "invalid_input": "Die bereitgestellte Eingabe ist ungültig.",
   "account_created": "Ihr Konto wurde erfolgreich erstellt",
   "email_subject_welcome": "Willkommen auf unserer Plattform! Wir heißen Sie willkommen",
-  "button_ok": "In Ordnung, mach weiter",
-  "email_body_welcome": "Vielen Dank, dass Sie sich uns angeschlossen haben. Wir freuen uns, Sie an Bord zu haben!"
+  "email_body_welcome": "Vielen Dank, dass Sie sich uns angeschlossen haben. Wir freuen uns, Sie an Bord zu haben!",
+  "button_ok": "In Ordnung, mach weiter"
 }

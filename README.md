@@ -1,22 +1,29 @@
 # 🌍 AutoLanguageSyncApp  
 > **AI-Powered Cloud Translation Manager** — one English source → instant multilingual support across frontend & backend.
 
-The app keeps all translations in sync between frontend, backend, and database — using one English source of truth.
+```bash
 
-Developer updates en.json (or backend English messages).
+[ en.json / backend messages ] 
+          │
+          ▼
+ [ syncTranslations.ts ]
+          │  (uses OpenAI for missing keys)
+          ▼
+ [ PostgreSQL (Translation table) ]
+          │
+   ┌──────┴──────────┐
+   ▼                 ▼
+Frontend (React)     Backend (tRPC)
+ │                     │
+ │  uses useTranslations() & i18next
+ │  fetches translation.getAll(lang)
+ │                     │
+ │                     │  reads translations from DB
+ │                     │  returns localized messages
+ └──────────> User sees full localized UI & API responses
 
-Sync script (npm run sync) reads English keys and text.
-
-It updates the database and uses OpenAI to translate missing or changed text for all other languages.
-
-New JSON files (like fr.json, de.json) are generated automatically.
-
-Frontend fetches translations from the backend dynamically using tRPC + React Query and caches them.
-
-Backend uses the same translation table to return localized messages (e.g. for API responses).
-
-Changing the language in the UI instantly updates both frontend text and backend messages.
 ---
+```
 
 ## 🧭 Overview  
 

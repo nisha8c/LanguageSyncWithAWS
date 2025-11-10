@@ -25,6 +25,50 @@ Frontend (React)     Backend (tRPC)
 ---
 ```
 
+## 🧩 1️⃣ Translation Sync (Offline Process)
+*(Executed when you run `npm run sync`)*
+
+| Step | Action | Flow |
+|------|---------|------|
+| 1 | Developer updates `locales/en.json` or backend `messages/en.ts`. | English is the single source of truth. |
+| 2 | Sync script reads English content. | Combines frontend + backend keys. |
+| 3 | Prisma upserts English keys into `Translation` table. | Ensures all English entries exist. |
+| 4 | For each other language: if missing or outdated → AI translates via OpenAI. | Generates localized text automatically. |
+| 5 | Prisma updates DB + writes new JSON files for each language. | Keeps everything consistent. |
+
+🧠 **Result:** Database + locale files are perfectly synced in all languages.
+
+---
+
+## 🖥️ 2️⃣ Frontend Runtime Logic
+
+| Step | Component | Function |
+|------|------------|----------|
+| 1 | `useTranslations(lang)` | Fetches translations via tRPC → DB → caches with React Query. |
+| 2 | `i18next.addResourceBundle()` | Loads translations dynamically into the i18next instance. |
+| 3 | `i18next.changeLanguage(lang)` | Switches UI instantly without reload. |
+| 4 | `t(key)` | Fetches localized text for the current language. |
+| 5 | `trpcClient.translation.buttonClick.query({ lang })` | Calls backend API to fetch translated backend messages. |
+
+💡 **Result:**  
+The UI text and backend responses always match the same selected language — no page reloads, no redeploys.
+
+---
+
+## ⚙️ 3️⃣ Backend Runtime Logic
+
+| Step | Module | Description |
+|------|---------|-------------|
+| 1 | `tRPC /translation.getAll` | Returns all key-value pairs for a given language (frontend fetch). |
+| 2 | `tRPC /translation.buttonClick` | Returns specific translated backend message by key (`account_created`). |
+| 3 | `Prisma` | Reads the translation from the database using `key_language` unique index. |
+| 4 | **Fallback** | If translation is missing → returns English default text. |
+| 5 | *(Optional)* Redis cache | Speeds up lookups for common requests. |
+
+🧠 **Result:**  
+Every backend API response is automatically localized for the active language.
+
+
 ## 🧭 Overview  
 
 **AutoLanguageSyncApp** is a centralized, AI-driven translation system that automatically syncs multilingual content between your frontend and backend.  

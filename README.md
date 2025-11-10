@@ -450,6 +450,83 @@ npm run sync
 Now the AI will re-translate that key automatically.
 
 
+# ✍️ Mark a Translation as Manually Edited
+
+Use the provided script to mark any specific translation as manually curated.
+
+### Command
+
+> npm run mark-manual -- <language_code> <key>
+
+Example
+
+```bash
+npm run mark-manual -- de welcome_message
+```
+What Happens
+
+✅ This command runs the following logic internally:
+
+
+```bash
+await prisma.translation.update({
+  where: { key_language: { key, language: "de" } },
+  data: { manuallyEdited: true },
+});
+```
+
+It sets manuallyEdited = true for the specified translation in your database.
+On the next sync, you’ll see this log:
+
+✋ [de] Skipped (manually edited) → welcome_message
+
+
+That key will not be re-translated or overwritten — even if English text changes.
+
+# 🧹 Unmark a Translation (Enable AI Again)
+
+If you want the AI system to take control again and re-translate that key, you can unmark it.
+
+Command
+> npm run unmark-manual -- <language_code> <key>
+
+Example
+
+```bash
+npm run unmark-manual -- de welcome_message
+```
+
+What Happens
+
+This command simply resets the flag:
+
+
+```bash
+await prisma.translation.update({
+  where: { key_language: { key, language: "de" } },
+  data: { manuallyEdited: false },
+});
+```
+
+
+On the next sync (npm run sync), the translation will be automatically updated by the AI again.
+
+🧱 Scripts in package.json
+
+Here’s how the related scripts look inside your package.json:
+
+```bash
+"scripts": {
+  "dev": "tsx src/index.ts",
+  "sync": "tsx src/utils/syncTranslations.ts",
+  "mark-manual": "tsx scripts/markManualEdit.ts",
+  "unmark-manual": "tsx scripts/unmarkManualEdit.ts",
+  "build": "tsc",
+  "start": "node dist/index.js"
+}
+```
+
+
 # ❤️ Author
 
 Built with ❤️ by [Nisha] — powered by TypeScript, Prisma, tRPC, React, and OpenAI.

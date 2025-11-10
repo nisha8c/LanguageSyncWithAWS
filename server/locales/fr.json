@@ -10,5 +10,7 @@
   "invalid_input": "L'entrée fournie est invalide",
   "account_created": "Votre compte a été créé avec succès",
   "email_subject_welcome": "Bienvenue sur notre plateforme",
-  "email_body_welcome": "Merci de vous être joint à nous. Nous sommes heureux de vous avoir à bord !"
+  "email_body_welcome": "Merci de vous être joint à nous. Nous sommes heureux de vous avoir à bord !",
+  "test_sentence1": "Test un pour voir s'il est mis à jour",
+  "test_sentence2": "Test un pour voir s'il est mis à jour"
 }

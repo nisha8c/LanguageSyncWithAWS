@@ -13,4 +13,5 @@ export const backendMessages: Record<string, string> = {
     // Email templates
     email_subject_welcome: "Welcome to our platform!",
     email_body_welcome: "Thank you for joining us. We’re glad to have you on board!",
+
 };

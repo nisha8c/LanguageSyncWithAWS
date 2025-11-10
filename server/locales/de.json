@@ -10,5 +10,7 @@
   "invalid_input": "Die bereitgestellte Eingabe ist ungültig.",
   "account_created": "Ihr Konto wurde erfolgreich erstellt",
   "email_subject_welcome": "Willkommen auf unserer Plattform",
-  "email_body_welcome": "Vielen Dank, dass Sie sich uns angeschlossen haben. Wir freuen uns, Sie an Bord zu haben!"
+  "email_body_welcome": "Vielen Dank, dass Sie sich uns angeschlossen haben. Wir freuen uns, Sie an Bord zu haben!",
+  "test_sentence1": "Test eins, um zu sehen, ob es aktualisiert wird",
+  "test_sentence2": "Test eins, um zu sehen, ob es aktualisiert wird"
 }

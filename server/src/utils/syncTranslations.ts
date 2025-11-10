@@ -54,6 +54,14 @@ export async function syncTranslations() {
                 where: { key_language: { key, language: lang } },
             });
 
+            // 🧠 Skip manual translations, always preserve them
+            if (existing?.manuallyEdited) {
+                console.log(`✋ [${lang}] Skipped (manually edited) → ${key}`);
+                skippedCount++;
+                continue;
+            }
+
+            // Only translate if new or English changed
             if (!existing) {
                 const translated = await translateText(newText, lang);
                 await prisma.translation.create({

@@ -7,7 +7,10 @@
     "dev": "tsx src/index.ts",              
     "sync": "tsx src/utils/syncTranslations.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "mark-manual": "tsx scripts/markManualEdit.ts",
+    "unmark-manual": "tsx scripts/unmarkManualEdit.ts"
+
   },
   "keywords": [],
   "author": "",

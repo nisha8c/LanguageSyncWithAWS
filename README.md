@@ -5,8 +5,8 @@
 
 ## 🧭 Overview  
 
-**LinguaSync** is a centralized, AI-driven translation system that automatically syncs multilingual content between your frontend and backend.  
-You only maintain **one English JSON file**, and LinguaSync handles:  
+**AutoLanguageSyncApp** is a centralized, AI-driven translation system that automatically syncs multilingual content between your frontend and backend.  
+You only maintain **one English JSON file**, and AutoLanguageSyncApp handles:  
 
 - 🌐 Automatic translation into all configured languages  
 - ⚡ Real-time language switching (frontend + backend)  
@@ -39,8 +39,8 @@ You only maintain **one English JSON file**, and LinguaSync handles:
 
 ### 1️⃣ Clone the repo
 ```bash
-git clone https://github.com/yourusername/linguasync.git
-cd linguasync
+git clone https://github.com/yourusername/Auto.git](https://github.com/nisha8c/AutoLanguageSyncApp.git
+cd AutoLanguageSyncApp (or whatever the foldername is)
 ```
 
 
@@ -62,7 +62,7 @@ npm install
 Inside /server/.env:
 
 ```bash
-DATABASE_URL=postgresql://user:password@localhost:5432/linguasync
+DATABASE_URL=postgresql://user:password@localhost:5432/auto-i18n
 OPENAI_API_KEY=your_openai_api_key
 PORT=4000
 ```
@@ -214,7 +214,7 @@ return record?.text ?? "Your account has been created successfully!";
 
 ## 🧩 Cloud Translation Architecture
 
-LinguaSync follows a cloud-based translation model:
+AutoLanguageSyncApp follows a cloud-based translation model:
 
 All translations live centrally (DB or API)
 

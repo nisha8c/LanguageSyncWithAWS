@@ -1,0 +1,14 @@
+{
+  "bk_email_body_welcome": "感謝您加入我們。我們很高興有您登機！",
+  "button_cancel": "取消",
+  "button_ok": "點擊我",
+  "bk_email_sent": "我們已向您發送一封包含驗證鏈接的電子郵件。",
+  "welcome_message": "歡迎，我是 Nisha，我來自印度孟買，住在斯德哥爾摩！",
+  "subtitle": "這是一個演示應用程序，可以通過自動生成和填充的 json 翻譯動態添加語言",
+  "bk_password_invalid": "密碼必須至少包含 8 個字元。",
+  "bk_unauthorized": "您沒有授權執行此動作。",
+  "bk_invalid_input": "提供的輸入無效。",
+  "bk_email_subject_welcome": "歡迎來到我們的平台！我們歡迎您",
+  "bk_account_created": "您的帳戶已成功建立。繼續登錄！",
+  "bk_internal_error": "出了什麼問題請稍後再試一次。"
+}

@@ -1,0 +1,14 @@
+{
+  "button_cancel": "取消",
+  "button_ok": "点击我",
+  "bk_email_sent": "我们已经向您发送了一封包含验证链接的电子邮件。",
+  "subtitle": "这是一个演示应用程序，可通过自动生成和填充的 json 翻译来动态添加语言",
+  "bk_password_invalid": "密码必须包含至少 8 个字符。",
+  "bk_unauthorized": "您无权执行此操作。",
+  "bk_invalid_input": "提供的输入无效。",
+  "bk_email_subject_welcome": "欢迎来到我们的平台！我们欢迎你",
+  "bk_email_body_welcome": "感谢您加入我们。我们很高兴你能加入！",
+  "bk_account_created": "您的账户已成功创建。继续登录！",
+  "bk_internal_error": "出了点问题。请稍后再试。",
+  "welcome_message": "欢迎，我是Nisha，我来自印度孟买，住在斯德哥尔摩！"
+}

@@ -1,7 +1,5 @@
 {
   "button_cancel": "Stornieren",
-  "button_ok": "OK",
-  "bk_account_created": "Ihr Konto wurde erfolgreich erstellt!",
   "bk_email_sent": "Wir haben Ihnen eine E-Mail mit einem Bestätigungslink geschickt.",
   "bk_internal_error": "Etwas ist schief gelaufen. Bitte versuchen Sie es später erneut.",
   "subtitle": "Dies ist eine Demo-App zum dynamischen Hinzufügen der Sprachen mit automatisch generierten und ausgefüllten JSON-Übersetzungen",
@@ -9,6 +7,8 @@
   "bk_unauthorized": "Sie sind nicht berechtigt, diese Aktion durchzuführen.",
   "bk_invalid_input": "Die angegebene Eingabe ist ungültig.",
   "bk_email_subject_welcome": "Willkommen auf unserer Plattform! Wir heißen dich willkommen",
+  "button_ok": "Klick auf mich",
   "bk_email_body_welcome": "Danke, dass du zu uns gekommen bist. Wir freuen uns, Sie an Bord zu haben!",
-  "welcome_message": "Willkommen, ich bin Nisha und komme aus Mumbai, Indien, und lebe in Stockholm!"
+  "welcome_message": "Willkommen, ich bin Nisha und komme aus Mumbai, Indien, und lebe in Stockholm! (Manually Edited to show meaning drift case)",
+  "bk_account_created": "Ihr Konto wurde erfolgreich erstellt. Mach weiter und logge dich ein!"
 }

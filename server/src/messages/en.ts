@@ -1,7 +1,7 @@
 // server/src/messages/en.ts
 export const backendMessages: Record<string, string> = {
     // Authentication
-    bk_account_created: "Your account has been created successfully!",
+    bk_account_created: "Your account has been created successfully. Go ahead and login!",
     bk_password_invalid: "Password must contain at least 8 characters.",
     bk_email_sent: "We have sent you an email with a verification link.",
 

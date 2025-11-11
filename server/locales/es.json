@@ -1,7 +1,5 @@
 {
   "button_cancel": "Cancelar",
-  "button_ok": "BIEN",
-  "bk_account_created": "¡Tu cuenta se ha creado correctamente!",
   "bk_email_sent": "Te hemos enviado un correo electrónico con un enlace de verificación.",
   "bk_internal_error": "Algo salió mal. Vuelva a intentarlo más tarde.",
   "subtitle": "Esta es una aplicación de demostración para agregar los idiomas de forma dinámica con traducciones json generadas y rellenadas automáticamente",
@@ -10,5 +8,7 @@
   "bk_invalid_input": "La entrada proporcionada no es válida.",
   "bk_email_subject_welcome": "¡Bienvenido a nuestra plataforma! ¡Le damos la bienvenida",
   "welcome_message": "¡Bienvenida, soy Nisha y soy de Mumbai, India y vivo en Estocolmo!",
+  "button_ok": "Haz clic en mí",
+  "bk_account_created": "Tu cuenta se ha creado correctamente. ¡Continúe e inicie sesión!",
   "bk_email_body_welcome": "Gracias por acompañarnos. ¡Nos alegra tenerte a bordo!"
 }

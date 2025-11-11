@@ -4,19 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx src/index.ts",              
+    "dev": "tsx src/index.ts",
     "sync": "tsx src/utils/syncTranslations.ts",
     "build": "tsc",
     "start": "node dist/index.js",
     "mark-manual": "tsx scripts/markManualEdit.ts",
     "unmark-manual": "tsx scripts/unmarkManualEdit.ts"
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@aws-sdk/client-translate": "^3.928.0",
     "@prisma/client": "^6.19.0",
     "@trpc/client": "^11.7.1",
     "@trpc/react-query": "^11.7.1",
@@ -30,6 +30,7 @@
     "zod": "^4.1.12"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.19"
+    "@types/cors": "^2.8.19",
+    "tsx": "^4.20.6"
   }
 }

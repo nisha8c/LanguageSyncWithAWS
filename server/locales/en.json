@@ -1,5 +1,4 @@
 {
-  "welcome_message": "Welcome, I am Nisha and I am from India and living in Stockholm!",
   "button_cancel": "Cancel",
   "button_ok": "OK",
   "bk_account_created": "Your account has been created successfully!",
@@ -10,5 +9,6 @@
   "bk_unauthorized": "You are not authorized to perform this action.",
   "bk_invalid_input": "The provided input is invalid.",
   "bk_email_subject_welcome": "Welcome to our platform! We welcome you",
-  "bk_email_body_welcome": "Thank you for joining us. We’re glad to have you on board!"
+  "bk_email_body_welcome": "Thank you for joining us. We’re glad to have you on board!",
+  "welcome_message": "Welcome, I am Nisha and I am from Mumbai India and living in Stockholm!"
 }

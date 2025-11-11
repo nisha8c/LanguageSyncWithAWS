@@ -1,25 +1,26 @@
-import OpenAI from "openai";
+import { TranslateClient, TranslateTextCommand } from "@aws-sdk/client-translate";
 import dotenv from "dotenv";
 dotenv.config();
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const translateClient = new TranslateClient({ region: process.env.AWS_REGION });
 
+/**
+ * Translate text using AWS Translate
+ * @param source English text
+ * @param targetLang ISO language code (e.g., "fr", "de", "es")
+ */
 export async function translateText(source: string, targetLang: string): Promise<string> {
     try {
-        const prompt = `Translate the following text from English to ${targetLang}. Respond with translation only — no extra punctuation or quotes.
-Text: ${source}`;
-
-        const completion = await openai.chat.completions.create({
-            model: "gpt-4o-mini",
-            messages: [{ role: "user", content: prompt }],
+        const command = new TranslateTextCommand({
+            SourceLanguageCode: "en",
+            TargetLanguageCode: targetLang,
+            Text: source,
         });
 
-        const output = completion.choices[0].message?.content?.trim() || source;
-
-        // remove stray wrapping quotes if still present
-        return output.replace(/^["']|["']$/g, "");
+        const response = await translateClient.send(command);
+        return response.TranslatedText || source;
     } catch (error) {
-        console.error(`❌ Translation failed (${targetLang}):`, error);
-        return source;
+        console.error(`❌ AWS Translation failed (${targetLang}):`, error);
+        return source; // fallback to English
     }
 }

@@ -1,14 +1,14 @@
 {
-  "button_cancel": "\"Cancelar\"",
-  "welcome_message": "Bienvenido, soy Nisha y soy de India y vivo en Estocolmo",
-  "subtitle": "Esta es una aplicación de demostración para añadir idiomas dinámicamente con traducciones json generadas y pobladas automáticamente",
-  "bk_password_invalid": "La contraseña debe contener al menos 8 caracteres.",
+  "button_cancel": "Cancelar",
+  "button_ok": "BIEN",
+  "bk_account_created": "¡Tu cuenta se ha creado correctamente!",
   "bk_email_sent": "Te hemos enviado un correo electrónico con un enlace de verificación.",
-  "button_ok": "Está bien",
-  "bk_account_created": "¡Tu cuenta ha sido creada con éxito!",
-  "bk_internal_error": "Algo salió mal. Por favor, inténtalo de nuevo más tarde.",
-  "bk_unauthorized": "No estás autorizado para realizar esta acción.",
+  "bk_internal_error": "Algo salió mal. Vuelva a intentarlo más tarde.",
+  "subtitle": "Esta es una aplicación de demostración para agregar los idiomas de forma dinámica con traducciones json generadas y rellenadas automáticamente",
+  "bk_password_invalid": "La contraseña debe contener al menos 8 caracteres.",
+  "bk_unauthorized": "No está autorizado a realizar esta acción.",
   "bk_invalid_input": "La entrada proporcionada no es válida.",
-  "bk_email_subject_welcome": "¡Bienvenido a nuestra plataforma! Te damos la bienvenida",
-  "bk_email_body_welcome": "Gracias por unirte a nosotros. ¡Estamos felices de tenerte a bordo!"
+  "bk_email_subject_welcome": "¡Bienvenido a nuestra plataforma! ¡Le damos la bienvenida",
+  "welcome_message": "¡Bienvenida, soy Nisha y soy de Mumbai, India y vivo en Estocolmo!",
+  "bk_email_body_welcome": "Gracias por acompañarnos. ¡Nos alegra tenerte a bordo!"
 }

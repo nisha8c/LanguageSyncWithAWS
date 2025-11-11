@@ -1,14 +1,14 @@
 {
-  "button_cancel": "\"Annuler\"",
-  "welcome_message": "Bienvenue, je suis Nisha et je viens d'Inde et je vis à Stockholm !",
-  "subtitle": "Ceci est une application de démonstration pour ajouter les langues dynamiquement avec des traductions json générées et peuplées automatiquement",
-  "bk_email_sent": "Nous vous avons envoyé un e-mail avec un lien de vérification",
-  "button_ok": "D'accord",
-  "bk_account_created": "Votre compte a été créé avec succès",
-  "bk_internal_error": "Quelque chose s'est mal passé. Veuillez réessayer plus tard.",
+  "button_cancel": "Annuler",
+  "button_ok": "OK.",
+  "bk_account_created": "Votre compte a été créé avec succès !",
+  "bk_email_sent": "Nous vous avons envoyé un e-mail contenant un lien de vérification.",
+  "bk_internal_error": "Quelque chose s'est mal passé. Veuillez réessayer ultérieurement.",
+  "subtitle": "Il s'agit d'une application de démonstration permettant d'ajouter les langues de manière dynamique avec des traductions json générées et remplies automatiquement",
   "bk_password_invalid": "Le mot de passe doit contenir au moins 8 caractères.",
   "bk_unauthorized": "Vous n'êtes pas autorisé à effectuer cette action.",
-  "bk_invalid_input": "L'entrée fournie est invalide.",
-  "bk_email_subject_welcome": "Bienvenue sur notre plateforme ! Nous vous accueillons",
-  "bk_email_body_welcome": "Merci de vous joindre à nous. Nous sommes ravis de vous avoir à bord !"
+  "bk_invalid_input": "L'entrée fournie n'est pas valide.",
+  "bk_email_subject_welcome": "Bienvenue sur notre plateforme ! Nous vous souhaitons la bienvenue",
+  "welcome_message": "Bienvenue, je suis Nisha, je viens de Mumbai en Inde et je vis à Stockholm !",
+  "bk_email_body_welcome": "Merci de vous joindre à nous. Nous sommes ravis de vous compter parmi nous !"
 }

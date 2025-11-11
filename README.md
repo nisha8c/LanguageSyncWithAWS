@@ -1,10 +1,8 @@
-# 🌍 AutoLanguageSyncApp  
-> **AI-Powered Cloud Translation Manager** — one English source → instant multilingual support across frontend & backend.
->
-> 
-> The app syncs English source texts (frontend + backend) with all supported languages through an AI-powered pipeline.
-> Translations are stored in a centralized database and regenerated automatically, keeping JSON files and UI perfectly aligned.
-> Manual edits are protected from AI updates — ensuring accuracy, consistency, and full control across multilingual environments.
+# 🌍 LanguageSyncWithAWS  
+
+> **AI-Powered Cloud Translation Manager** — one English source → instant multilingual support across frontend & backend using AWS Translate.
+
+> This version replaces OpenAI with AWS Translate, providing fast, secure, and enterprise-compliant localization directly through AWS services.
 
 
 100% usable in large, multi-page, high-performance apps.
@@ -18,7 +16,7 @@ this setup scales easily to enterprise-level workloads — both frontend and bac
           │
           ▼
  [ syncTranslations.ts ]
-          │  (uses OpenAI for missing keys)
+          │  (uses AWS translate for missing keys)
           ▼
  [ PostgreSQL (Translation table) ]
           │
@@ -44,7 +42,7 @@ Frontend (React)     Backend (tRPC)
 | 1 | Developer updates `locales/en.json` or backend `messages/en.ts`. | English is the single source of truth. |
 | 2 | Sync script reads English content. | Combines frontend + backend keys. |
 | 3 | Prisma upserts English keys into `Translation` table. | Ensures all English entries exist. |
-| 4 | For each other language: if missing or outdated → AI translates via OpenAI. | Generates localized text automatically. |
+| 4 | For each other language: if missing or outdated → AI translates via AWS Translate. | Generates localized text automatically. |
 | 5 | Prisma updates DB + writes new JSON files for each language. | Keeps everything consistent. |
 
 🧠 **Result:** Database + locale files are perfectly synced in all languages.
@@ -88,7 +86,7 @@ You only maintain **one English JSON file**, and AutoLanguageSyncApp handles:
 - 🌐 Automatic translation into all configured languages  
 - ⚡ Real-time language switching (frontend + backend)  
 - 🔄 Centralized updates — no redeploy needed  
-- 🤖 AI-assisted translation (OpenAI)  
+- 🤖 AI-assisted translation (AWS Translate)  
 - 🧱 Shared localization between client and server  
 
 💡 **Architecture:** Cloud-based translation sync — all translations live in one centralized database and are fetched dynamically via tRPC.
@@ -102,7 +100,7 @@ You only maintain **one English JSON file**, and AutoLanguageSyncApp handles:
 | **Frontend** | React (Vite) + i18next + React Query | Dynamic multilingual UI |
 | **Backend** | Node.js + Express + tRPC | Unified type-safe API |
 | **Database** | PostgreSQL + Prisma ORM | Persistent translation store |
-| **AI Translation** | OpenAI GPT-4o-mini | Automatic generation of translations |
+| **AI Translation** | AWS Translate | Automatic generation of translations |
 | **Caching** | React Query + optional Redis | Performance and scalability |
 | **Environment** | dotenv | Secure API key management |
 
@@ -116,8 +114,8 @@ You only maintain **one English JSON file**, and AutoLanguageSyncApp handles:
 
 ### 1️⃣ Clone the repo
 ```bash
-git clone https://github.com/yourusername/Auto.git](https://github.com/nisha8c/AutoLanguageSyncApp.git
-cd AutoLanguageSyncApp (or whatever the foldername is)
+git clone https://github.com/nisha8c/LanguageSyncWithAWS.git
+cd LanguageSyncWithAWS (or whatever the foldername is)
 ```
 
 
@@ -140,7 +138,9 @@ Inside /server/.env:
 
 ```bash
 DATABASE_URL=postgresql://user:password@localhost:5432/auto-i18n
-OPENAI_API_KEY=your_openai_api_key
+AWS_ACCESS_KEY_ID=your_aws_api_key
+AWS_SECRET_ACCESS_KEY=your_aws_secret_key
+AWS_REGION=eu-north-1
 PORT=4000
 ```
 

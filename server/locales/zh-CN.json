@@ -1,7 +1,7 @@
 {
   "button_cancel": "取消",
-  "button_ok": "点击我",
   "bk_email_sent": "我们已经向您发送了一封包含验证链接的电子邮件。",
+  "button_ok": "来吧",
   "subtitle": "这是一个演示应用程序，可通过自动生成和填充的 json 翻译来动态添加语言",
   "bk_password_invalid": "密码必须包含至少 8 个字符。",
   "bk_unauthorized": "您无权执行此操作。",

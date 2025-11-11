@@ -7,7 +7,7 @@
   "bk_unauthorized": "Sie sind nicht berechtigt, diese Aktion durchzuführen.",
   "bk_invalid_input": "Die angegebene Eingabe ist ungültig.",
   "bk_email_subject_welcome": "Willkommen auf unserer Plattform! Wir heißen dich willkommen",
-  "button_ok": "Klick auf mich",
+  "button_ok": "Mach weiter",
   "bk_email_body_welcome": "Danke, dass du zu uns gekommen bist. Wir freuen uns, Sie an Bord zu haben!",
   "welcome_message": "Willkommen, ich bin Nisha und komme aus Mumbai, Indien, und lebe in Stockholm! (Manually Edited to show meaning drift case)",
   "bk_account_created": "Ihr Konto wurde erfolgreich erstellt. Mach weiter und logge dich ein!"

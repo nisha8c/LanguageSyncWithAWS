@@ -51,6 +51,7 @@ export default function App() {
                 <option value="de">Deutsch</option>
                 <option value="es">Español</option>
                 <option value="it">Italiano</option>
+                <option value="hi">Hindi</option>
             </select>
 
             <button

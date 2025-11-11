@@ -538,9 +538,89 @@ Here’s how the related scripts look inside your package.json:
 }
 ```
 
+```bash
+
+🌐 Most Commonly Used Languages
+Language                | Code     | Notes
+------------------------|----------|-----------------------------------------
+English                 | en       | Base language / fallback
+French                  | fr       | Français
+German                  | de       | Deutsch
+Spanish                 | es       | Español
+Italian                 | it       | Italiano
+Portuguese (Brazil)     | pt-BR    | Português (Brasil)
+Portuguese (Portugal)   | pt-PT    | Português (Portugal)
+Dutch                   | nl       | Nederlands
+Swedish                 | sv       | Svenska
+Norwegian Bokmål        | nb       | 🇳🇴 Most used in Norway
+Norwegian Nynorsk       | nn       | 🇳🇴 Alternative dialect
+Danish                  | da       | Dansk
+Finnish                 | fi       | Suomi
+Icelandic               | is       | Íslenska
+Polish                  | pl       | Polski
+Czech                   | cs       | Čeština
+Slovak                  | sk       | Slovenčina
+Hungarian               | hu       | Magyar
+Greek                   | el       | Ελληνικά
+Turkish                 | tr       | Türkçe
+Russian                 | ru       | Русский
+Ukrainian               | uk       | Українська
+Romanian                | ro       | Română
+Bulgarian               | bg       | Български
+Serbian                 | sr       | Српски
+Croatian                | hr       | Hrvatski
+Slovenian               | sl       | Slovenščina
+
+
+🌏 Asian & Middle Eastern Languages
+Language                | Code     | Notes
+------------------------|----------|-----------------------------------------
+Chinese (Simplified)    | zh-CN    | 🇨🇳 Mainland China
+Chinese (Traditional)   | zh-TW    | 🇭🇰 Taiwan / Hong Kong
+Japanese                | ja       | 日本語
+Korean                  | ko       | 한국어
+Hindi                   | hi       | हिन्दी
+Bengali                 | bn       | বাংলা
+Tamil                   | ta       | தமிழ்
+Telugu                  | te       | తెలుగు
+Kannada                 | kn       | ಕನ್ನಡ
+Malayalam               | ml       | മലയാളം
+Arabic (generic)        | ar       | العربية
+Arabic (Saudi Arabia)   | ar-SA    | Common for MENA region
+Persian (Farsi)         | fa       | فارسی
+Hebrew                  | he       | עברית
+Thai                    | th       | ไทย
+Vietnamese              | vi       | Tiếng Việt
+Indonesian              | id       | Bahasa Indonesia
+Malay                   | ms       | Bahasa Melayu
+
+
+🌍 African & Regional Languages
+Language                | Code     | Notes
+------------------------|----------|-----------------------------------------
+Swahili                 | sw       | Kiswahili
+Afrikaans               | af       | Afrikaans
+Amharic                 | am       | አማርኛ
+Somali                  | so       | Soomaali
+Zulu                    | zu       | isiZulu
+Hausa                   | ha       | Hausa
+
+
+🌎 American Languages
+Language                | Code     | Notes
+------------------------|----------|-----------------------------------------
+English (US)            | en-US    | Default English locale
+English (UK)            | en-GB    | British English
+French (Canada)         | fr-CA    | Français (Canada)
+Spanish (Mexico)        | es-MX    | Español (México)
+Spanish (Argentina)     | es-AR    | Español (Argentina)
+
+```
 
 # ❤️ Author
 
 Built with ❤️ by [Nisha] — powered by TypeScript, Prisma, tRPC, React, and OpenAI.
+
+
 
 

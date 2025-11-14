@@ -1,0 +1,14 @@
+{
+  "bk_invalid_input": "Den angivna inmatningen är ogiltig.",
+  "bk_email_subject_welcome": "Välkommen till vår plattform! Vi välkomnar dig",
+  "bk_email_body_welcome": "Tack för att du gick med oss. Vi är glada att ha dig ombord!",
+  "button_cancel": "Avbryt",
+  "button_ok": "Gå vidare",
+  "bk_account_created": "Ditt konto har skapats framgångsrikt. Gå vidare och logga in!",
+  "bk_internal_error": "Något gick fel. Försök igen senare.",
+  "subtitle": "Detta är en demoapp för att lägga till språken dynamiskt med automatiskt genererade och fyllda json-översättningar",
+  "bk_password_invalid": "Lösenordet måste innehålla minst 8 tecken.",
+  "bk_email_sent": "Vi har skickat ett e-postmeddelande med en verifieringslänk.",
+  "bk_unauthorized": "Du har inte behörighet att utföra den här åtgärden.",
+  "welcome_message": "Välkommen, jag är Nisha och jag är från Mumbai Indien och bor i Stockholm!"
+}

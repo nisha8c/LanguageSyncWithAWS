@@ -55,6 +55,8 @@ export default function App() {
                 <option value="zh-CN">Simple Chinese</option>
                 <option value="zh-TW">Traditional Chinese</option>
                 <option value="ko">Korean</option>
+                <option value="ar">Arabic</option>
+                <option value="sv">Swedish</option>
             </select>
 
             <button

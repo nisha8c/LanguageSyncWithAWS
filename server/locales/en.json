@@ -1,7 +1,4 @@
 {
-  "bk_invalid_input": "The provided input is invalid.",
-  "bk_email_subject_welcome": "Welcome to our platform! We welcome you",
-  "bk_email_body_welcome": "Thank you for joining us. We’re glad to have you on board!",
   "button_cancel": "Cancel",
   "button_ok": "Go ahead",
   "bk_account_created": "Your account has been created successfully. Go ahead and login!",
@@ -9,6 +6,9 @@
   "subtitle": "This is a demo app to add the languages dynamically with auto generated and populated json translations",
   "bk_password_invalid": "Password must contain at least 8 characters.",
   "bk_email_sent": "We have sent you an email with a verification link.",
+  "bk_invalid_input": "The provided input is invalid.",
   "bk_unauthorized": "You are not authorized to perform this action.",
+  "bk_email_subject_welcome": "Welcome to our platform! We welcome you",
+  "bk_email_body_welcome": "Thank you for joining us. We’re glad to have you on board!",
   "welcome_message": "Welcome, I am Nisha and I am from Mumbai India and living in Stockholm!"
 }
